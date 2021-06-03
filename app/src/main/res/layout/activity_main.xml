@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/loadingTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="Videos are in merging process..Please wait.."/>
+
+
+    <TextView
+        android:id="@+id/beforeCompTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/afterCompTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:padding="5dp"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"/>
+
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/vv"
+        android:visibility="gone"
+        android:background="#432444"
+        android:layout_margin="10dp"/>
+
+    <com.potyvideo.library.AndExoPlayerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/andExoPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:andexo_aspect_ratio="aspect_16_9"
+        app:andexo_play_when_ready="true"
+        app:andexo_show_controller="true"
+        app:andexo_resize_mode="Fit"/>
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoadVideo"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Play Merged Video"/>
+
+
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Select Multiple Videos From Gallery"/>
+
+
+
+
+
+
+</LinearLayout>
