@@ -308,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onCancelled() {
                         // On Cancelled
                     }
-                }, VideoQuality.MEDIUM, false, false);
+                }, VideoQuality.LOW, false, false);
 
     }
 
